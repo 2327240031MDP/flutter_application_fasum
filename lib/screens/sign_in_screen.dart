@@ -18,7 +18,7 @@ class _SignInScreenState extends State<SignInScreen> {
   bool _isLoading = false;
   bool _isPasswordVisible = false;
 
-  String _errorMessage = '';
+  final String _errorMessage = '';
 
   void _signIn() async {
     if (!_formKey.currentState!.validate()) {
