@@ -1,10 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_fasum/firebase_options.dart';
-import 'package:flutter_application_fasum/screens/add_post_screen.dart';
 import 'package:flutter_application_fasum/screens/home_screen.dart';
 import 'package:flutter_application_fasum/screens/sign_in_screen.dart';
-import 'package:flutter_application_fasum/screens/sign_up_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: const SignInScreen(),
+      home: const HomeScreen(),
     );
   }
 }
