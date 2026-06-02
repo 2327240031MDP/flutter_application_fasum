@@ -136,6 +136,11 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: const Icon(Icons.filter_list),
             tooltip: 'Filter Kategori',
           ),
+          IconButton(
+            onPressed: () => signOut(context),
+            icon: const Icon(Icons.logout),
+            tooltip: 'Logout',
+          ),
         ],
       ),
 
